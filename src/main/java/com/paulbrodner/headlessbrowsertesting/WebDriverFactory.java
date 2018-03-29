@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.springframework.beans.factory.FactoryBean;
@@ -38,7 +39,7 @@ public class WebDriverFactory implements FactoryBean<WebDriver> {
 	private Capabilities fromWebDriverBrowserName(String browserName) {
 		switch (webdriverBrowserName.toLowerCase()) {
 		case "firefox":
-			return DesiredCapabilities.firefox();			
+			return new FirefoxOptions();			
 		case "chrome":
 			return DesiredCapabilities.chrome();
 		default:
