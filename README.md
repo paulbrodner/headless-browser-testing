@@ -5,7 +5,7 @@ Playing with selenium, java, docker and standalone selenium docker images
 - [x] [docker](https://docs.docker.com/engine/installation/)
 - [x] [docker-compose](https://docs.docker.com/compose/)
 - [x] Unix/Windows OS
-
+- [ ] (optional) read [this blog](https://paulbrodner.github.io/2018/webbrowser-testing-using-standalone-docker-images/)
 ## Usage
 a) git clone https://github.com/paulbrodner/headless-browser-testing
 b) start Selenium Grid with Firefox in a docker container 
